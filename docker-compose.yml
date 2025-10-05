@@ -1,4 +1,5 @@
-version: '3.3'
+version: '3.8'
+
 services:
   wordpress:
     image: wordpress:latest
@@ -14,6 +15,7 @@ services:
 
   db:
     image: mysql:5.7
+    restart: always
     environment:
       MYSQL_DATABASE: wordpress
       MYSQL_USER: wordpress
