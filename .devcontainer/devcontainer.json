@@ -1,0 +1,8 @@
+{
+  "name": "WordPress Dev",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "wordpress",
+  "workspaceFolder": "/var/www/html",
+  "forwardPorts": [8080],
+  "remoteUser": "www-data"
+}
