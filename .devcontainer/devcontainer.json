@@ -1,8 +1,9 @@
 {
   "name": "WordPress Dev",
-  "dockerComposeFile": "../docker-compose.yml",
-  "service": "wordpress",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
   "forwardPorts": [8080],
-  "remoteUser": "codespace",
-  "workspaceFolder": "/workspaces/wordpress-codespace"
+  "workspaceFolder": "/workspaces/wordpress-codespace",
+  "remoteUser": "codespace"
 }
